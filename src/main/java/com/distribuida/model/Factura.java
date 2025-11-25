@@ -1,9 +1,15 @@
 package com.distribuida.model;
 
+import jakarta.persistence.*;
+
+import javax.annotation.processing.Generated;
 import java.util.Date;
-
+@Entity
+@Table(name = "factura")
 public class Factura {
-
+    @id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_factura")
     private int idFactura;
     private String numFactura;
     private Date fecha;
@@ -13,6 +19,8 @@ public class Factura {
 
 //private int idCliente
     //
+    @ManyToOne
+    @JoinColumn(name = "id_cliente")
     private Cliente cliente;
 
      public Factura (){ }
