@@ -1,4 +1,12 @@
 package com.distribuida.dao;
 
-public interface ClienteRepository {
+import com.distribuida.model.Cliente;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+//@Repository
+public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
+
+    //public Cliente findBynombreAndApelido(int id);
+
 }
