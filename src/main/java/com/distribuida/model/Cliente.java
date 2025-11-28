@@ -11,11 +11,17 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_cliente")
     private int idCliente;
+    @Column(name = "cedula")
     private String cedula;
+    @Column(name = "nombre")
     private String nombre;
+    @Column(name = "apellido")
     private String apellido;
+    @Column(name = "direccion")
     private String diereccion;
+    @Column(name = "telefono")
     private String telefono;
+    @Column(name = "correo")
     private String correo;
 
 
