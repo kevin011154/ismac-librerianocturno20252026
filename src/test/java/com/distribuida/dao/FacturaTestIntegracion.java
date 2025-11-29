@@ -32,6 +32,7 @@ public class FacturaTestIntegracion {
         List<Factura> facturas = facturaRepository.findAll();
         facturas.forEach(System.out::println);
 
+
     }
 
     @Test
@@ -70,7 +71,7 @@ public class FacturaTestIntegracion {
         factura.orElse(null).setTotalNeto(200.00);
         factura.orElse(null).setIva(60.00);
         factura.orElse(null).setTotal(260.00);
-        factura.orElse(null).setCliente(cliente.orElse(null);
+        factura.orElse(null).setCliente(cliente.orElse(null));
 
         facturaRepository.save(factura.orElse(null));
 
@@ -80,7 +81,7 @@ public class FacturaTestIntegracion {
 
     @Test
     public void testFacturaDelete(){
-        facturaRepository.deleteById(86);
+        facturaRepository.deleteById(82);
 
 
     }

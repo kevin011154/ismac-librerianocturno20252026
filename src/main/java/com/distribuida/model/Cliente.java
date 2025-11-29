@@ -18,7 +18,7 @@ public class Cliente {
     @Column(name = "apellido")
     private String apellido;
     @Column(name = "direccion")
-    private String diereccion;
+    private String direccion;
     @Column(name = "telefono")
     private String telefono;
     @Column(name = "correo")
@@ -33,7 +33,7 @@ public class Cliente {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.diereccion = diereccion;
+        this.direccion = diereccion;
         this.telefono = telefono;
         this.correo = correo;
     }
@@ -71,12 +71,12 @@ public class Cliente {
         this.apellido = apellido;
     }
 
-    public String getDiereccion() {
-        return diereccion;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setDiereccion(String diereccion) {
-        this.diereccion = diereccion;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     public String getTelefono() {
@@ -103,7 +103,7 @@ public class Cliente {
                 ", cedula='" + cedula + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
-                ", diereccion='" + diereccion + '\'' +
+                ", direccion='" + direccion + '\'' +
                 ", telefono='" + telefono + '\'' +
                 ", correo='" + correo + '\'' +
                 '}';
